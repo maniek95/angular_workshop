@@ -8,3 +8,24 @@
 <div>
     <input type="text" [(ngModel)]="title">
 </div>
+
+<br>
+
+<div>
+    show content
+    <input type="checkbox" [(ngModel)]="showContent">
+</div>
+
+<div [hidden]="!showContent">
+    <p *ngFor="let welcome of welcomeList">
+        {{welcome}}
+    </p>
+</div>
+
+<br>
+
+<div *ngIf="showContent">
+    <p *ngFor="let welcome of welcomeList">
+        {{welcome}}
+    </p>
+</div>
