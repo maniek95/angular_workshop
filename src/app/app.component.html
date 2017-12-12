@@ -1,2 +1,9 @@
-<a [routerLink]="['/code-europe']">code europe</a>
-<router-outlet></router-outlet>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+    <a mat-menu-item [routerLink]="['/code-europe']">code europe</a>
+    <a mat-menu-item [routerLink]="['/publications']">publications</a>
+</mat-menu>
+
+<div class="app-container">
+    <router-outlet></router-outlet>
+</div>

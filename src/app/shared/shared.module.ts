@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserAnimationsModule,
     CommonModule,
-    HttpModule
+    HttpModule,
   ],
   declarations: []
 })
