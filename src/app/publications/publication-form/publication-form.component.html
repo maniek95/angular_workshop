@@ -1,0 +1,15 @@
+<div>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <input name="publicationName" matInput type="text" placeholder="publication name" [(ngModel)]="publication">
+        </mat-form-field>
+    </form>
+
+    <button mat-button (click)="getPublications(publication)">Get</button>
+</div>
+
+<div *ngFor="let publication of publicationResponse.docs">
+    <mat-card>
+        {{publication.title}} {{publication.first_publish_year}}
+    </mat-card>
+</div>
