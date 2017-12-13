@@ -9,6 +9,9 @@ import { HttpModule } from '@angular/http';
     CommonModule,
     HttpModule,
   ],
-  declarations: []
+  declarations: [
+  ],
+  providers:[
+  ]
 })
 export class SharedModule { }

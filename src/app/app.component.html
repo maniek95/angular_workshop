@@ -1,7 +1,6 @@
 <button mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
-    <a mat-menu-item [routerLink]="['/code-europe']">code europe</a>
-    <a mat-menu-item [routerLink]="['/publications']">publications</a>
+    <a mat-menu-item *ngFor="let menu of menus" [routerLink]="[menu.url]">{{menu.name}}</a>
 </mat-menu>
 
 <div class="app-container">
