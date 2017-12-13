@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 
 import { CodeEuropeModule } from './code-europe/code-europe.module';
 import { PublicationsModule } from './publications/publications.module';
+import { SiennModule } from './sienn/sienn.module';
 
 const materialModules = [
   MatToolbarModule,  
@@ -33,6 +34,7 @@ const materialModules = [
     materialModules,
     CodeEuropeModule,
     PublicationsModule,
+    SiennModule
   ],
   providers: [],
   bootstrap: [AppComponent]
